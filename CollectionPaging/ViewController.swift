@@ -46,12 +46,13 @@ class ViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         let layout = collectionView.collectionViewLayout as! FAPaginationLayout
-        layout.itemSize =  CGSize(width: width, height: ht-50)
+        layout.itemSize =  CGSize(width: width, height: self.ht_const.constant)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         collectionView.collectionViewLayout = layout
+        self.collectionView.reloadData()
     }
 }
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{

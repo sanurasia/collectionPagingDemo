@@ -67,14 +67,19 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjS-wv-kU2">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fjS-wv-kU2">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" red="1" green="0.31295019540000002" blue="0.2095858239" alpha="1" colorSpace="calibratedRGB"/>
                                                         </imageView>
                                                     </subviews>
                                                 </view>
                                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="fjS-wv-kU2" secondAttribute="bottom" id="U9r-Lc-Zi6"/>
+                                                    <constraint firstItem="fjS-wv-kU2" firstAttribute="leading" secondItem="XBI-fd-ojh" secondAttribute="leading" id="iOa-1X-vsC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fjS-wv-kU2" secondAttribute="trailing" id="qoF-w1-KTY"/>
+                                                    <constraint firstItem="fjS-wv-kU2" firstAttribute="top" secondItem="XBI-fd-ojh" secondAttribute="top" id="xEj-wJ-Qc3"/>
+                                                </constraints>
                                                 <connections>
                                                     <outlet property="imageView" destination="fjS-wv-kU2" id="kYR-Hl-k1l"/>
                                                 </connections>
@@ -91,7 +96,6 @@
                                     <constraint firstAttribute="trailing" secondItem="cae-ZJ-GV9" secondAttribute="trailing" id="B1h-Ka-lhv"/>
                                     <constraint firstAttribute="height" constant="603" id="a1v-JL-EwU"/>
                                     <constraint firstItem="cae-ZJ-GV9" firstAttribute="top" secondItem="usp-HX-Uh6" secondAttribute="top" id="aYE-Xs-m3G"/>
-                                    <constraint firstAttribute="bottom" secondItem="cae-ZJ-GV9" secondAttribute="bottom" id="ifJ-eP-xC0"/>
                                     <constraint firstItem="cae-ZJ-GV9" firstAttribute="leading" secondItem="usp-HX-Uh6" secondAttribute="leading" id="urh-Je-6FW"/>
                                     <constraint firstItem="cae-ZJ-GV9" firstAttribute="height" secondItem="usp-HX-Uh6" secondAttribute="height" id="vg4-lh-VZj"/>
                                 </constraints>
